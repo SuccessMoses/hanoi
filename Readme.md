@@ -1,7 +1,6 @@
-# Tower of Hanoi — 4 Disks (Recursive, Python Turtle)
+# Tower of Hanoi
 
 Animated Tower of Hanoi using Python's `turtle` module.  
-The window shows 4 colored disks moving across three pegs (A → C via B).
 
 ## Run with Docker
 

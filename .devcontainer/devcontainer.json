@@ -12,7 +12,7 @@
 
   "initializeCommand": "xhost +local:docker",
 
-  "postStartCommand": "python tower_of_hanoi.py",
+  "postStartCommand": "python main.py",
 
   "customizations": {
     "vscode": {

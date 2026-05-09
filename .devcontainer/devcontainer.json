@@ -1,0 +1,27 @@
+{
+  "name": "Tower of Hanoi",
+  "dockerFile": "../Dockerfile",
+
+  "containerEnv": {
+    "DISPLAY": "${localEnv:DISPLAY}"
+  },
+
+  "mounts": [
+    "source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind"
+  ],
+
+  "initializeCommand": "xhost +local:docker",
+
+  "postStartCommand": "python tower_of_hanoi.py",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python"
+      }
+    }
+  }
+}

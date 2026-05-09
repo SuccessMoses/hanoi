@@ -24,5 +24,5 @@ docker run --rm -e DISPLAY=host.docker.internal:0 hanoi
 Requires Python 3 with Tk support.
 
 ```bash
-python tower_of_hanoi.py
+python main.py
 ```

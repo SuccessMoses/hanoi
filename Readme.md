@@ -7,6 +7,7 @@ The window shows 4 colored disks moving across three pegs (A → C via B).
 
 **Linux / macOS**
 ```bash
+xhost +local:docker
 docker build -t hanoi .
 docker run --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix hanoi
 ```
